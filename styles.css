@@ -306,9 +306,6 @@ button[type="submit"] {
 button[type="submit"]:hover {
   background-color: #555;
 }
-.toggle-menu {
-  display: none;
-}
 
 /* Стили для подвала */
 footer {
@@ -335,111 +332,84 @@ footer {
   font-size: 24px;
 }
 
-.logo-cta-container {
-  display: flex;
-  align-items: center;
-}
-
-.cta {
-  margin-left: 20px;
-}
-
-@media (max-width: 767px) {
-  /* Стили для мобильных устройств */
-  body {
-    font-size: 16px;
+/* Медиа-запросы */
+@media (max-width: 768px) {
+  .body {
+    overflow-x: hidden; /* Убираем горизонтальный скролл на мобильных устройствах */
   }
-
   .container {
-    padding: 0 10px;
-  }
-  .toggle-menu {
-    display: block;
-  }
-  
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px 0;
+    padding: 0 10px; /* Уменьшаем внутренние отступы контейнера */
   }
 
   .LB_img {
-    margin: 0;
-  }
-  .logo-and-cta {
-    justify-content: space-between;
-    width: 100%;
+    margin-left: 10px; /* Уменьшаем отступ между логотипом и навигацией */
   }
 
-  
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .nav-links {
-    display: none;
-  }
-  
-
-  .nav-links.show {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+  nav a {
+    padding: 5px 8px; /* Уменьшаем отступы элементов навигации */
   }
 
   .nav-links a {
-    margin: 5px 0;
+    display: none;
   }
-
-  .cta .btn {
-    margin-bottom: 50px;
-  }
-
+  
   .hero h1 {
-    font-size: 32px;
+    font-size: 36px; /* Уменьшаем размер заголовка в секции "Герой" */
   }
 
   .hero p {
-    font-size: 18px;
-  }
-
-  .feature-grid,
-  .pricing-grid,
-  .testimonial-grid,
-  .faq-grid {
-    grid-template-columns: 1fr;
+    font-size: 16px; /* Уменьшаем размер текста в секции "Герой" */
   }
 
   .pricing-plan {
-    padding: 20px;
-    border-radius: 10px;
+    padding: 20px; /* Уменьшаем внутренние отступы карточек тарифного плана */
+    border-radius: 20px; /* Увеличиваем радиус скругления углов карточек тарифного плана */
   }
 
   .pricing-plan h3 {
-    font-size: 20px;
+    font-size: 20px; /* Уменьшаем размер заголовка тарифного плана */
+    margin-bottom: 15px; /* Уменьшаем отступ после заголовка тарифного плана */
   }
 
   .pricing-plan .price {
-    font-size: 28px;
+    font-size: 28px; /* Уменьшаем размер цены в тарифном плане */
+    margin-bottom: 15px; /* Уменьшаем отступ после цены в тарифном плане */
+  }
+
+  .pricing-plan ul {
+    margin-bottom: 30px; /* Уменьшаем отступ после списка особенностей в тарифном плане */
   }
 
   .testimonial {
-    padding: 20px;
+    padding: 20px; /* Уменьшаем внутренние отступы блока отзыва */
+  }
+
+  .testimonial i {
+    font-size: 20px; /* Уменьшаем размер иконки в блоке отзыва */
+    top: 15px; /* Уменьшаем отступ иконки от верхнего края блока отзыва */
+    left: 15px; /* Уменьшаем отступ иконки от левого края блока отзыва */
+  }
+
+  .testimonial p {
+    font-size: 14px; /* Уменьшаем размер текста в блоке отзыва */
   }
 
   .faq-item {
-    padding: 15px;
+    padding: 15px; /* Уменьшаем внутренние отступы блока вопроса */
+  }
+
+  .faq-item h3 {
+    font-size: 18px; /* Уменьшаем размер заголовка вопроса */
+    margin-bottom: 8px; /* Уменьшаем отступ после заголовка вопроса */
   }
 
   .form-group input,
   .form-group textarea {
-    padding: 8px;
+    padding: 8px; /* Уменьшаем внутренние отступы полей ввода формы */
   }
 
   button[type="submit"] {
-    padding: 8px 16px;
-    font-size: 16px;
+    padding: 8px 16px; /* Уменьшаем внутренние отступы кнопки отправки формы */
+    font-size: 16px; /* Уменьшаем размер текста кнопки отправки формы */
   }
-}
+} 
