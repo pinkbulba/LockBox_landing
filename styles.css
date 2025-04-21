@@ -416,3 +416,61 @@ footer {
     font-size: 16px; /* Уменьшаем размер текста кнопки отправки формы */
   }
 } 
+
+.investment-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  text-align: center;
+  padding: 40px 0;
+}
+.metric {
+  background: #f4f4f4;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.metric h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.metric p {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.investment-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  text-align: center;
+  padding: 40px 0;
+}
+.metric {
+  background: #f4f4f4;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.metric h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.metric p {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.how-it-works .feature-grid,
+.audience .feature-grid {
+  display: grid;
+  gap: 30px;
+  text-align: center;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.how-it-works .feature i,
+.audience .feature i {
+  font-size: 40px;
+  color: #16c421;
+  margin-bottom: 10px;
+}
